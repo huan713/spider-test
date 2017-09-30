@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p 以下是搜索到的内容：
+  -each item in items
+    div
+      a(href= item.href, target='_blank') #{item.text}
